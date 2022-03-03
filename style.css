@@ -1,17 +1,39 @@
 html,
 body {
     height: 100%;
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
 }
 
 .container {
+    height: 100%;
+    margin: 5 px;
     border-style: solid;
-    border-color: black;
+    border-color: grey;
+    border-radius: 5px;
     display: grid;
-    grid-template-columns: repeat(16, 1fr);
-    grid-template-rows: repeat(16, 1fr);
+    justify-items: stretch;
+    align-items: stretch;
 }
 
 .gridItem {
     background-color: white;
-    height: 10px;
+}
+
+.reset {
+    align-self: center;
+    margin: 5px;
+    border-style: solid;
+    border-radius: 5px;
+    background-color: white;
+    border: 1px;
+}
+
+.reset:hover {
+    background-color: red;
+}
+
+.reset:active {
+    background-color: rgb(146, 0, 0);
 }
